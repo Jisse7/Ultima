@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto+Slab&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: 'Roboto',sans-serif;
+    display:flex;
+    align-items:center;
+    height: 100vh;
+    margin:0;
+    
+
+}
+
+
+
+img {
+    width:700px;
+    height: 720px;
+    object-fit: cover;
+}
+
+.carousel {
+    border-radius: 8px;
+    margin-left: 31.5%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    height: 760px;
+    width: 700px;
+    overflow: hidden;
+    position:absolute;
+    
+
+}
+
+#ckay{
+    width: 1880px;
+	height: 30px;
+	border: 3px black solid;
+    border-radius: 40px;
+	position: fixed;
+	top: 96.5%;
+    margin-left: 1%;
+}
+
+#background-video {
+
+    height: 60vw;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+   
+    }
+    
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 1s ease-in-out;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+    /* ça va éloigner le plus que possible les boutons */
+}
+
+.btn{
+    background-color: red;
+    color: white;
+    border:none;
+    padding:0.5rem;
+    /* l'unité rem n'est qu'un multiplicateur de l'élément html racine qui apr défaut est de 16pixel */
+    cursor: pointer;
+    width:49.8%;
+    opacity: 0.75;
+    font-size: 1.3em;
+    
+}
+
+.btn:hover {
+    opacity:0.9;
+    background-color: blue;
+}
+
+.btn:focus {
+    outline:none
+}
+
